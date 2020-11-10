@@ -123,7 +123,42 @@ git config --global user.email "zhangjingwei@seu.edu.cn"
 
 - git remote set-url origin ip地址  修改远程本地仓库的仓库地址
 
+## 子模块相关操作
 
+**1、创建子模块时指定一个分支**
+
+通过 **-b** 指定对应分支
+
+```
+git submodule add -b master [URL to Git repo];
+例如：git submodule add --force -b origin/v1.2.1 https://github.com/Xilinx/Vitis-AI.git vitis-ai-git/ --force表示强制添加
+```
+
+**2、子模块更新**
+
+```sh
+git submodule update --init --recursive
+```
+
+**3、删除子模块**
+
+有时子模块的项目维护地址发生了变化，或者需要替换子模块，就需要删除原有的子模块。
+
+删除子模块较复杂，步骤如下：
+
+1. `rm -rf 子模块目录` 删除子模块目录及源码
+
+2. `vi .gitmodules` 删除项目目录下.gitmodules文件中子模块相关条目
+
+3. `vi .git/config` 删除配置项中子模块相关条目
+
+4. `rm .git/module/*` 删除模块下的子模块目录，每个子模块对应一个目录，注意只删除对应的子模块目录即可
+
+5. 执行完成后，再执行添加子模块命令即可，如果仍然报错，执行如下：
+
+   ```
+   git rm --cached 子模块名称
+   ```
 
 ## 参考网址
 
