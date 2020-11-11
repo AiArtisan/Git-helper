@@ -123,7 +123,20 @@ git config --global user.email "zhangjingwei@seu.edu.cn"
 
 - git remote set-url origin ip地址  修改远程本地仓库的仓库地址
 
+- git rebase  复制commit
+
 ## 子模块相关操作
+
+**0、切换子模块的链接**
+
+```
+cd [submodule folder]
+git fetch origin
+git pull
+git checkout -b v1.2.1 tags/v1.2.1
+cd ..
+git add [submodule folder]
+```
 
 **1、创建子模块时指定一个分支**
 
