@@ -71,6 +71,8 @@ git config --global user.email "zhangjingwei@seu.edu.cn"
 
 - git log  根据commit查看操作
 
+- git log --oneline  查看第一条，即版本的验证码
+
 - git status
 
   看暂存区的修改文件 
