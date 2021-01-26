@@ -125,6 +125,8 @@ git config --global user.email "zhangjingwei@seu.edu.cn"
 
 - git remote set-url origin ip地址  修改远程本地仓库的仓库地址
 
+  git remote add mainline  https://github.com/Xilinx/DPU-PYNQ.git 增加一个远程仓库
+
 - git rebase  复制commit
 
 ## 子模块相关操作
