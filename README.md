@@ -10,7 +10,7 @@
 
 ```bash
 git config --global user.name "Jingwei Zhang"
-git config --global user.email "zhangjingwei@seu.edu.cn"
+git config --global user.email "993987093@qq.com"
 ```
 
 
