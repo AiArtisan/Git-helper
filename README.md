@@ -14,6 +14,14 @@ git config --global user.email "993987093@qq.com"
 ```
 
 
+## 配置代理
+
+如果您正在使用127.0.0.1的代理服务器和7890的端口
+
+```bash
+git config --global http.proxy 127.0.0.1:7890
+```
+
 
 ## Github上的准备工作
 
